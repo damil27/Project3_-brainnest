@@ -9,7 +9,7 @@ const playerPlay = () => {
   let input = prompt("Enter Rock,Paper or Scissors");
   // validatation to check if user want to submit or cancel an empty input.
   while (input == null) {
-    input = prompt("The input field cannot be left blank.");
+    input = prompt("Enter Rock,Paper or Scissors");
   }
   input = input.toLowerCase();
   // validation to check spelling accuracy.
