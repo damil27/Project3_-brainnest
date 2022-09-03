@@ -29,7 +29,7 @@ const playerPlay = () => {
   return input;
 };
 
-// validateInput function check if the user input exist from the game choice
+// validateInput function to check if the user input exist from the game choice
 const validateInput = (str) => gameItems.includes(str);
 
 // check take to player and computer parameters and decide who win or lose
@@ -42,7 +42,7 @@ const checkWinner = (playerSelection, computerSelection) => {
     ? `You win! ${playerSelection} beat ${computerSelection} `
     : `You Lose! ${computerSelection} beat ${playerSelection}`;
 };
-function playGame() {
+const  playGame = () => {
   const playerSelection = playerPlay();
   const computerSelection = computerPlay();
   const winner = checkWinner(playerSelection, computerSelection);
@@ -50,7 +50,7 @@ function playGame() {
 }
 
 // console log the winner
-const displayWinners =  ()=>{
+const displayWinners =  () =>{
   console.log(winners)
 }
 
