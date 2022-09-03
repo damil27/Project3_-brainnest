@@ -47,5 +47,5 @@ function playGame() {
   alert(winner);
   console.log(winner);
 }
-// calling may function
+// calling main function
 playGame();
