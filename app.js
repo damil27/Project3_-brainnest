@@ -16,7 +16,7 @@ const playerPlay = () => {
   let check = validateInput(input);
   while (check == false) {
     input = prompt(
-      "The input field cannot be left blank,Spelling accuracy is required, but capitalization is not necessary."
+      "The input field cannot be left blank and Spelling accuracy is required, but capitalization is not necessary."
     );
     while (input == null) {
       input = prompt("Type Rock, Paper or Scissors.");
