@@ -5,8 +5,7 @@ const winners = []
 
 
 //computerPlay function return rock,paper or scissor randomly.
-const computerPlay = () =>
-  gameItems[Math.floor(Math.random() * gameItems.length)];
+const computerPlay = () => gameItems[Math.floor(Math.random() * gameItems.length)];
 
 const playerPlay = () => {
   let input = prompt("Enter Rock,Paper or Scissors");
