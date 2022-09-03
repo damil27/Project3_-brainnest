@@ -1,5 +1,8 @@
 // array of game choice
 const gameItems = ["rock", "paper", "scissors"];
+const winners = []
+
+
 
 //computerPlay function return rock,paper or scissor randomly.
 const computerPlay = () =>
@@ -44,8 +47,23 @@ function playGame() {
   const playerSelection = playerPlay();
   const computerSelection = computerPlay();
   const winner = checkWinner(playerSelection, computerSelection);
-  alert(winner);
-  console.log(winner);
+  winners.push(winner);
 }
+
+// console log the winner
+const displayWinners =  ()=>{
+  console.log(winners)
+}
+
+
+function game(){
+  // loop for the game to run 5 times
+  for(let i = 0; i <5; i++){
+    playGame()
+  }
+  displayWinners();
+}
+
+
 // calling main function
-playGame();
+game();
