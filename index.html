@@ -4,10 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Document</title>
 </head>
 <body>
 
+    <header>
+        <h2>Rock, Paper & Scissors Game</h2>
+    </header>
+    <div class="container">
+
+        <section class="playerFlex">
+            <aside class="player">
+                <h2>Player</h2>
+                <div class="keypad">
+                    <button data-key="Rock" >Rock</button>
+                    <button data-key="Paper" >Paper</button>
+                    <button data-key="Scissors">Scissors</button>
+                </div>
+            </aside>
+
+            <aside>
+                <h2>Display Winner</h2>
+                <section class="gameCount">
+                    <div class="displayWinner"></div>
+                </section>
+            </aside>
+
+            <aside class="computer">
+               <h2>Computer</h2> 
+            </aside>
+        </section>
+        
+    </div>
     <script src="./app.js"></script>
 </body>
 </html>
